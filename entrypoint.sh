@@ -21,7 +21,7 @@ then
  sed -i "s/_user_/${DBT_USER}/g" ./profiles.yml
  sed -i "s/_password_/${DBT_PASSWORD}/g" ./profiles.yml
 fi
-
+$1
 # DBT_LOG_FILE=${DBT_LOG_FILE:="dbt_console_output.txt"}
 # DBT_LOG_PATH="${INPUT_DBT_PROJECT_FOLDER}/${DBT_LOG_FILE}"
 # echo "DBT_LOG_PATH=${DBT_LOG_PATH}" >> $GITHUB_ENV
